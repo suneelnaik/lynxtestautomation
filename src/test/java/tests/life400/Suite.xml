@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Life400" parallel="none" >
+<parameter name="Documentation" value="Suite documentation" />
+<parameter name="Environment" value="UAT" />
+<parameter name="BuildLink" value="https://teamcity/sample/build/link.html" />
+		<test name="TC001 - Check Premium Status" preserve-order="true">
+			<classes><class name="tests.life400.TC001Life400Login"></class></classes>
+			<parameter name="Documentation" value="Test Documenation for TC001" />
+			<parameter name="ShortName" value="Test Short Name" />
+			<parameter name="Tags" value="TestWrittenBy:Trung,EpicName:Transactions,StoryID:12345" />
+			<parameter name="Portfolio" value="Life" />
+			<parameter name="Application" value="Life" />
+			<parameter name="FunctionalArea" value="FunctionalArea1" />
+			<parameter name="TestType" value="SmokeTest" />
+			<parameter name="Feature" value="Feature 001" />
+			<parameter name="Keywords" value="Automation, Life400, CDC, UAT, Regression" />
+		</test>
+		<test name="TC002 - Check Premium Status" preserve-order="true">
+			<classes><class name="tests.life400.TC002Life400Login"></class></classes>
+			<parameter name="Documentation" value="Test Documenation for TC002" />
+			<parameter name="ShortName" value="Test Short Name for Test 2" />
+			<parameter name="Tags" value="TestWrittenBy:Trung,EpicName:Transactions,StoryID:12345" />
+			<parameter name="Portfolio" value="Life" />
+			<parameter name="Application" value="Life" />
+			<parameter name="FunctionalArea" value="FunctionalArea1" />
+			<parameter name="TestType" value="Regression" />
+			<parameter name="Feature" value="Feature 001" />
+			<parameter name="Keywords" value="Automation, Life400, CDC, UAT, Regression" />
+		</test>
+		<test name="TC003 - Read DB data" preserve-order="true">
+			<classes><class name="tests.life400.TC003DBDataProvider"></class></classes>
+			<parameter name="Documentation" value="Test Documenation for TC003" />
+			<parameter name="ShortName" value="Test Short Name" />
+			<parameter name="Tags" value="TestWrittenBy:Trung,EpicName:Transactions,StoryID:12345" />
+			<parameter name="Portfolio" value="Life" />
+			<parameter name="Application" value="Life" />
+			<parameter name="FunctionalArea" value="FunctionalArea1" />
+			<parameter name="TestType" value="HealthCheck" />
+			<parameter name="Feature" value="Feature 001" />
+			<parameter name="Keywords" value="Automation, Life400, CDC, UAT, Regression" />
+		</test>
+	<listeners>
+		<listener class-name="com.tal.listener.LynxTestListener" />
+		<listener class-name="com.tal.listener.MethodInterceptorListener" />
+	</listeners>
+</suite>

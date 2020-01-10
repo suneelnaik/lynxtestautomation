@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Application2" parallel="none" >
+<parameter name="Documentation" value="Suite documentation" />
+<parameter name="Environment" value="UAT" />
+<parameter name="BuildLink" value="https://teamcity/sample/build/link.html" />
+		<test name="TC004 - Sample Test" preserve-order="true">
+			<classes><class name="tests.sample.sampleTest"></class></classes>
+			<parameter name="Documentation" value="Test Documenation for TC001" />
+			<parameter name="ShortName" value="Test Short Name" />
+			<parameter name="Tags" value="TestWrittenBy:Trung,EpicName:Transactions,StoryID:12345" />
+			<parameter name="Portfolio" value="Life" />
+			<parameter name="Application" value="TAC" />
+			<parameter name="FunctionalArea" value="FunctionalArea1" />
+			<parameter name="TestType" value="SmokeTest" />
+			<parameter name="Feature" value="Feature 001" />
+			<parameter name="Keywords" value="Automation, Life400, CDC, UAT, Regression" />
+			<parameter name="Browser" value="firefox" />
+			<parameter name="URL" value="https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login" />
+		</test>
+	<listeners>
+		<listener class-name="com.tal.listener.LynxTestListener" />
+		<listener class-name="com.tal.listener.MethodInterceptorListener" />
+	</listeners>		
+</suite>
