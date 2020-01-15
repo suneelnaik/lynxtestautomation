@@ -14,7 +14,7 @@
 			<parameter name="TestType" value="SmokeTest" />
 			<parameter name="Feature" value="Feature 001" />
 			<parameter name="Keywords" value="Automation, Life400, CDC, UAT, Regression" />
-			<parameter name="Browser" value="firefox" />
+			<parameter name="Browser" value="chrome" />
 			<parameter name="URL" value="https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login" />
 		</test>
 	<listeners>
